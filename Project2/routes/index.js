@@ -16,7 +16,7 @@ router.get('/home', function(req, res, next) {
 
 /* GET About page. */
 router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'About me' });
+  res.render('about', { title: 'About' });
 });
 
 /* GET projects page. */
@@ -27,7 +27,7 @@ router.get('/projects', function(req, res, next) {
 
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
-  res.render('contact', { title: 'Contact me' });
+  res.render('contact', { title: 'Contact' });
 });
 
 module.exports = router;
