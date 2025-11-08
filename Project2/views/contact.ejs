@@ -1,56 +1,43 @@
 <% include partials/header %>
 <% include partials/main_nav %>
 
-<html>
- 
 <div id="wrapper">
 
-<!--The banner ID style is inside the wrapper ID style-->
-<div id="banner">
-<h1> Contact Me here</h1>
-<p>To get in touch with me, please fill out the form below. </p>
+  <div id="banner">
+    <h1>Contact Me Here</h1>
+    <p>To get in touch with me, please fill out the form below.</p>
+  </div>
+
+  <form action="mailto:fatimah.kamal@ontariotechu.net?subject=Feedback from website"
+        enctype="text/plain" method="post" name="ContactForm">
+
+    <div class="mb-3">
+      <label for="FName" class="form-label">Your Name</label>
+      <input type="text" class="form-control" id="FName" name="FName" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="Phone" class="form-label">Your Phone Number</label>
+      <input type="text" class="form-control" id="Phone" name="Phone" placeholder="Enter your phone number" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="Email" class="form-label">Your Email</label>
+      <input type="email" class="form-control" id="Email" name="Email" placeholder="Enter your email address" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="comments" class="form-label">Comments</label>
+      <textarea class="form-control" id="comments" name="comments" rows="6" placeholder="Enter your comments here"></textarea>
+    </div>
+
+    <div class="mb-3">
+      <input type="reset" class="btn btn-secondary" value="Reset">
+      <input type="submit" class="btn btn-primary" value="Submit">
+    </div>
+
+  </form>
 
 </div>
-   
-            <form action="mailto:fatimah.kamal@ontariotechu.net?subject=Feedback from website"
-            enctype="text/plain" method="post" name="ContactForm"
-            >
-            <p>
-                <label for="FName">Your Name: </label>
-                <input type="text" name="FName" size="40"
-                placeholder="Enter your full name" required>
-            </p>
-
-                        <p>
-                <label for="Email">Your Phone Number: </label>
-                <input type="email" name="Phone" size="40"
-                placeholder="Enter your Phone number" required>
-            </p>
-
-            <p>
-                <label for="Email">Your Email: </label>
-                <input type="email" name="Email" size="40"
-                placeholder="Enter your email address" required>
-            </p>
-            <p>
-                <label for="comments">Comments: </label>
-                <br>
-                <textarea name="comments" cols="60" rows="8"></textarea>
-            </p>
-            
-            <p>
-                <br><br>
-                <input type="reset" value="Reset">
-                <input type="submit" value="Submit">
-            </p>
-            </form>
-
-
-  
-      
-           
-    </div>
-    </body>
-</html>
 
 <% include partials/footer %>
