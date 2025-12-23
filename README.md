@@ -1,4 +1,10 @@
-Hi, and Welcome to my Project!
+Hi, and Welcome to my Portfolio!
+
+Description
+This project is a web application developed as part of a university course, Web & Script Development (INFR3120U), to demonstrate core web development concepts, including templating, styling, and deployment. 
+It serves as a portfolio-style site showcasing my work and applying concepts learned in the course.
+
+Link: https://ws-a2.onrender.com
 
 References:
 
